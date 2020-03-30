@@ -9,4 +9,5 @@
   <input type="text" name="word" placeholder="Type the word!">
   <input type="submit" value="Valider" class="btn btn-primary">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
 </form>
