@@ -3,3 +3,10 @@
     <li><%= letter %></li>
   <% end %>
 </ul>
+
+<p>What is the longest word you can find?</p>
+<form action="/score" method="POST">
+  <input type="text" name="word" placeholder="Type the word!">
+  <input type="submit" value="Valider" class="btn btn-primary">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
